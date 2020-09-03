@@ -1,0 +1,19 @@
+package com.selenium;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
+class Course  {
+	public static void main(String args[]) {
+		Set<String> course1= new HashSet<>();
+		course1.add("CS");
+		course1.add("EC");
+		course1.add("EE");
+		System.out.println(course1);
+		
+	}
+
+}
+ 
+	

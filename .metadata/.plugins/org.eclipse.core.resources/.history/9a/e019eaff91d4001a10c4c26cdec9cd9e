@@ -1,0 +1,19 @@
+package com.infy;
+
+class Loan{
+	Loan(int x){
+		System.out.println("Request for loan");
+	}
+}
+
+class HomeLoan extends Loan{
+	HomeLoan(){
+		super(10);
+		System.out.println("Request for HomeLoan");
+		
+		
+	}
+	public static void main(String args[]){
+		HomeLoan obh=new HomeLoan();
+	}
+}

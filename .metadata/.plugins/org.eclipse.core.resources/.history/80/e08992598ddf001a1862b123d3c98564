@@ -1,0 +1,17 @@
+package com.selenium;
+
+class Employee {
+    public  void display() { // line 2
+          System.out.print(" Employee ");
+    }
+}
+
+public class Trainee extends Employee {
+    public  void display() { // line 5
+          System.out.print(" Trainee ");
+    }
+    public static void main(String[] args) {
+          Employee employee = new Trainee();
+         employee.display(); // line 9
+    }
+}

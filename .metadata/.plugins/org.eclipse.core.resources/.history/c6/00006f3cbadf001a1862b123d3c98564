@@ -1,0 +1,35 @@
+package com.selenium;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+class Course  {
+	public static void main(String args[]) {
+		Set<String> course1= new HashSet<>();
+		course1.add("CS");
+		course1.add("EC");
+		course1.add("EE");
+		System.out.println(course1);
+		
+		Set<String> course2= new HashSet<>();
+		course2.add("CS");
+		course2.add("ME");
+		System.out.println(course2);
+		
+		Map<Integer,Set<String>> studentCourse= new TreeMap<>();
+		studentCourse.put(1014, course1);
+		studentCourse.put(102, course2);
+		
+	System.out.println(studentCourse);
+		
+		
+		
+	}
+
+}
+ 
+	

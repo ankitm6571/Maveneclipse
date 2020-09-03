@@ -1,0 +1,36 @@
+package com.selenium;
+
+import java.sql.Driver;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TableContent {
+
+
+@Before
+
+public void testsetup() throws InterruptedException {
+	String Url= "http://demo.guru99.com/test/upload/";
+	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\91954\\Desktop\\Ankit\\chromedriver.exe");
+	  WebDriver driver= new ChromeDriver();
+	  driver.get(Url);
+	  Thread.sleep(3000);
+	
+}
+@Test
+public void test1() {
+	
+	WebElement UploadFile= 
+	
+}
+
+	}
+
+

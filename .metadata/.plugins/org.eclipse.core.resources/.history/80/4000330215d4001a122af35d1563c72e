@@ -1,0 +1,8 @@
+package com.infy;
+
+class TypeDemo {
+	returnType methodA(byte x, double y) //line2
+	{  
+		return (short)x / y * 2;
+	}
+}

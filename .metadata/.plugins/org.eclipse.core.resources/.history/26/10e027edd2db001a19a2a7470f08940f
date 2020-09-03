@@ -1,0 +1,44 @@
+package com.selenium;
+
+import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class NewAJax {
+	WebDriver driver;
+	String url= "http://demo.guru99.com/test/write-xpath-table.html";
+	
+	@Before
+	
+	public void setup() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\91954\\Desktop\\Ankit\\chromedriver.exe");
+		   driver= new ChromeDriver();
+		  driver.get(url);
+		  Thread.sleep(3000);
+		  }
+	@Test
+	
+	public void test() {
+		
+		
+		//WebElement DynamicTable= driver.findElement(By.xpath("//*[@id=\"leftcontainer\"]/table/thead/tr/th[1]"));
+		List<WebElement> rows=driver.findElements(By.xpath("/html/body/center[1]/table/tbody/tr"));
+		System.out.println("Col Size   " + rows.size());
+	
+		
+	}
+	@After
+	
+	public void after() throws InterruptedException {
+		//Thread.sleep(3000);
+		driver.close();
+	}
+}

@@ -1,0 +1,13 @@
+package com.infy;
+class Bank {
+	String bankName, area, phoneNo;
+
+	bank(){
+		System.out.println("Banking application");
+	}
+
+	public static void main(String args[]) {
+		Bank bank = new Bank();
+		System.out.println(bank.bankName);
+	}
+}

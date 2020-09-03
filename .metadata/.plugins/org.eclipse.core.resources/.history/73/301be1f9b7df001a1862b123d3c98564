@@ -1,0 +1,31 @@
+package com.selenium;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
+class Course  {
+	public static void main(String args[]) {
+		Set<course> course1= new HashSet<>();
+		course1.add(new course("CS"));
+		course1.add(new course("EC"));
+		course1.add(new course("EE"));
+		System.out.println(course1);
+		
+	}
+
+}
+class course{
+	String courseName;
+	course(String courseName){
+		this.courseName=courseName;
+		
+	}
+	
+	public String toString() {
+		return courseName;
+		
+	}
+	
+}

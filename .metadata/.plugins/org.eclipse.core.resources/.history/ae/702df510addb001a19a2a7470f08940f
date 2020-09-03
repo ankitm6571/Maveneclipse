@@ -1,0 +1,35 @@
+package com.selenium;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class NewAJax {
+	WebDriver driver;
+	String url= "http://demo.guru99.com/test/radio.html";
+	
+	@Before
+	
+	public void setup() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\91954\\Desktop\\Ankit\\chromedriver.exe");
+		   driver= new ChromeDriver();
+		  driver.get(url);
+		  Thread.sleep(3000);
+		  }
+	@Test
+	
+	public void test() {
+		driver.findElement(By.xpath("//*[@id=\"vfb-7-1\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"vfb-6-1\"]")).click();
+		
+	}
+	@After
+	
+	public void after() throws InterruptedException {
+		Thread.sleep(3000);
+		driver.close();
+	}
+}

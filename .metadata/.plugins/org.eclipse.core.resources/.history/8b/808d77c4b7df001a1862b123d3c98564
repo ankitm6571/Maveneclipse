@@ -1,0 +1,26 @@
+package com.selenium;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Set;
+
+class Course  {
+	public static void main(String args[]) {
+		Set<course> course= new Set<>;
+		
+	}
+
+}
+class course{
+	String courseName;
+	course(String courseName){
+		this.courseName=courseName;
+		
+	}
+	
+	public String toString() {
+		return courseName;
+		
+	}
+	
+}

@@ -1,0 +1,45 @@
+package com.selenium;
+
+import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class NewAJax {
+	WebDriver driver;
+	String url= "https://www.guru99.com/";
+	
+	@Before
+	
+	public void setup() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\91954\\Desktop\\Ankit\\chromedriver.exe");
+		   driver= new ChromeDriver();
+		  driver.get(url);
+		  Thread.sleep(3000);
+		  }
+	@Test
+	
+	public void test() {
+		
+		
+		Actions action= new Actions(driver);
+		WebElement test= driver.findElement(By.xpath("//*[@id=\"menu-3688-particle\"]/nav/ul/li[2]/div/span[1]/span"));
+		WebElement Junit=driver.findElement(By.xpath("//*[@id=\"menu-3688-particle\"]/nav/ul/li[2]/ul/li/div/div[2]/ul/li[2]/a/span/span"));
+		action.moveToElement(test).moveToElement(Junit).click().build().perform();
+	
+		
+	}
+	@After
+	
+	public void after() throws InterruptedException {
+		//Thread.sleep(3000);
+		//driver.close();
+	}
+}

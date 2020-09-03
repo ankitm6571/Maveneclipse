@@ -1,0 +1,11 @@
+package com.infy;
+
+class TypeDemo{
+
+	public static void main(String args[]){
+		long x = 8888888;// Line 1
+		float y= x; //Line 2
+		double z=x+y; //Line 3
+		System.out.println(z);
+	}
+}

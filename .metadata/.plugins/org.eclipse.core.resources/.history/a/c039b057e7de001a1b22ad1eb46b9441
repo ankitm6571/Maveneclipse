@@ -1,0 +1,15 @@
+package com.selenium;
+
+public class VarargsTest {
+    public static void main(String[] args) {
+          displayRegn("Hockey"); // Line 1
+          displayRegn("Kho-Kho", 1, 2, 3);
+    }
+
+    public static void displayRegn(String nameOfSport, int... iDs) {
+          System.out.print(" Registration for " + nameOfSport + ":");
+          for (int i = 0; i < iDs.length; i++) {
+                 System.out.print(iDs[i] + " ");
+          }
+    }
+}

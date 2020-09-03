@@ -1,0 +1,17 @@
+package com.infy;
+
+public final class Loan {    // class is made as final. No other class can extend this class.
+    int tenure = 0;
+	double principal;
+	float interestRate;
+	String accountNumber;
+    double calculateEMI(){
+        return 2000;
+    }
+  
+}
+// The below code is wrong because Loan is not extensible
+class HomeLoan extends Loan
+{
+  
+}
